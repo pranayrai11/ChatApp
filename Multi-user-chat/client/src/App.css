@@ -1,0 +1,226 @@
+/* General App Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header */
+.app-header {
+  background-color: #008069;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.app-header p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Main Body */
+.app-main {
+  flex: 1;  /* Takes up remaining space between header and footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.auth-container, .chat-interface {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.auth-container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.auth-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  padding: 10px;
+  margin: 10px 0;
+  width: 300px;
+  font-size: 16px;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.auth-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #008069;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.auth-btn:hover {
+  background-color: #00684f;
+}
+
+/* Chat Interface */
+.chat-interface {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-list li {
+  margin-bottom: 10px;
+}
+
+.user-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  text-align: left;
+}
+
+.user-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.chat-area {
+  width: 70%;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chat-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chat-header {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.message-bubble {
+  margin: 10px 0;
+  padding: 10px;
+  max-width: 70%;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+
+.sent {
+  background-color: #daf8cb;
+  align-self: flex-end;
+}
+
+.received {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.input-message {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.send-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #008069;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.send-btn:hover {
+  background-color: #00684f;
+}
+
+/* No Chat Selected Message */
+.no-chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.no-chat h3 {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Footer */
+.app-footer {
+  background-color: #008069;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.app-footer p {
+  margin: 0;
+  font-size: 14px;
+}
